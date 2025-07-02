@@ -4,21 +4,6 @@ server:
 spring:
   cloud:
     gateway:
-      globalcors:
-        add-to-simple-url-handler-mapping: true
-        corsConfigurations:
-          '[/**]':
-            allowedOrigins:
-              - "https://four458finalfrontend.onrender.com"
-            allowedMethods:
-              - GET
-              - POST
-              - PUT
-              - DELETE
-              - OPTIONS
-            allowedHeaders:
-              - "*"
-            allowCredentials: true
       routes:
         - id: admin-service
           uri: https://four458finaladminservice.onrender.com
